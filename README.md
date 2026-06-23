@@ -19,12 +19,12 @@ cd $env:USERPROFILE\.trae
 git init
 git remote add origin https://github.com/zhangwenquan/AI-Coding-Rules-Skills.git
 git fetch origin
-git checkout -b main --track origin/main
+git checkout -f main
 ```
 
 或者一行命令：
 ```powershell
-mkdir $env:USERPROFILE\.trae -ErrorAction SilentlyContinue; cd $env:USERPROFILE\.trae; git init; git remote add origin https://github.com/zhangwenquan/AI-Coding-Rules-Skills.git; git fetch origin; git checkout -b main --track origin/main
+mkdir $env:USERPROFILE\.trae -ErrorAction SilentlyContinue; cd $env:USERPROFILE\.trae; git init; git remote add origin https://github.com/zhangwenquan/AI-Coding-Rules-Skills.git; git fetch origin; git checkout -f main
 ```
 
 ### 更新
@@ -50,7 +50,6 @@ git pull
 以下文件被 `.gitignore` 排除，不会被提交到仓库：
 - `argv.json` - 本地配置
 - `extensions/` - 本地安装的扩展
-- `builtin/` - Trae 自动生成的内置文件
 
 ## 添加新的 Skill
 
