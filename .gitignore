@@ -1,0 +1,12 @@
+# 本地配置文件，不提交到仓库
+argv.json
+crash-reporter-id
+
+# 扩展目录（本地安装的扩展）
+extensions/
+
+# 内置目录（Trae 自动生成的）
+builtin/
+
+# 其他本地文件
+*.local.*
